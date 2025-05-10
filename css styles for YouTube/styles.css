@@ -1,0 +1,129 @@
+
+.thumbnail {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.video-title {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 11px;
+    color: black;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.icon {
+    width: 36px;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 7px;
+    position: relative;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width:
+999px) {
+    .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+.video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.video-time {
+    font-family: roboto, Arial;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
+ 
+/* styles.css */
+
+.video-preview {
+    /* your existing grid/card styles… */
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .video-preview:hover,
+  .video-preview:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  .video-preview a:focus-visible {   /* if you wrap each card in an <a> */
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+  }
+
+
+  .button-row {
+    margin-left: 2px;
+    margin-top: -100px;    
+    margin-bottom: 24px; 
+    margin-right: 10px;
+    
+    display: flex;       /* line them up in a row */
+    gap: 12px;           /* space between buttons */
+    justify-content: space-between 
+  }
+  
+  .button-row button {
+    padding: 8px 16px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: rgb(220, 215, 215);
+    background-color: #f3e4e4;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .button-row button:hover {
+    background-color: #eee;
+  }
+  
+
+  
+  

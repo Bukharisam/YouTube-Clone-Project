@@ -1,0 +1,46 @@
+.sidebar {
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 5px;
+    z-index: 200;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: width .3s ease;
+    color: rgb(0, 0, 0);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar.closed {
+    width: 120px;
+}
+
+.sidebar-link {
+    position: relative;      /* ← needed for ::after positioning */
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+}
+
